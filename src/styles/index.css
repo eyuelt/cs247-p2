@@ -8,6 +8,8 @@ body {
 
 h2 {
   font-size: 300%;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .page {
@@ -45,6 +47,11 @@ h2 {
   padding-bottom: 10px;
 }
 
+#links a {
+  text-decoration: none;
+  color: white;
+}
+
 #tardis {
   position: absolute;
   z-index: -1;
@@ -55,14 +62,39 @@ h2 {
   background-size: cover;
 }
 
-#project-list li {
-  border: 1px solid yellow;
-  margin: 10px;
-  padding: 10px;
-  width: 75%;
+#project-list {
+  margin-left: 50px;
 }
 
-div#links a {
-  text-decoration: none;
-  color: white;
+#project-list li {
+  margin-top: 30px;
+  padding: 10px;
+  width: 68%;
+  min-height: 12%;
+  border-radius: 10px;
+  background-color: rgba(190,200,255,0.1);
+}
+
+#project-list li div.title {
+  padding-bottom: 10px;
+}
+
+#project-list li div.blurb {
+  white-space: normal;
+}
+
+#project-list li .github-icon {
+  border-radius: 5px;
+  background-color: #ddd;
+
+  margin: -4px;
+  margin-left: 15px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/images/github.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
