@@ -1,3 +1,53 @@
 body {
-    background-color: blue;
+  /*background-color: #1f3454;*/
+  background-color: #182742;
+  white-space: nowrap;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+}
+
+h2 {
+  font-size: 300%;
+}
+
+.page {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+#fez {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  margin-left: -200px;
+}
+
+.right {
+  text-align: right;
+  margin-right: 50px;
+}
+
+#myname {
+  margin-top: 130px;
+  font-size: 100px;
+}
+
+#links {
+  margin-top: 50px;
+  font-size: 28px;
+}
+
+#tardis {
+  position: absolute;
+  height: 300px;
+  width: auto;
+  z-index: -1;
+}
+
+#project-list li {
+  border: 1px solid yellow;
+  margin: 10px;
+  padding: 10px;
+  width: 75%;
 }
