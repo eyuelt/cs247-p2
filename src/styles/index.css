@@ -55,7 +55,7 @@ h2 {
 #tardis {
   position: absolute;
   z-index: -1;
-  background-image: url("/images/tardis.png");
+  background-image: url("../images/tardis.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -94,7 +94,7 @@ h2 {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("/images/github.png");
+  background-image: url("../images/github.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
