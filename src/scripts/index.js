@@ -30,7 +30,7 @@ function layout() {
     //set tardis size and offset
     var tardisHeight = windowHeight*1.1;
     var tardisWidth = tardisHeight/16*9;
-    var tardisLeft = $('#projectpage').offset().left + windowWidth - tardisWidth*2/3;
+    var tardisLeft = $('#projectspage').offset().left + windowWidth - tardisWidth*2/3;
     $('#tardis').height(tardisHeight);
     $('#tardis').width(tardisWidth);
     $('#tardis').offset({top:-tardisHeight/20, left:tardisLeft});
