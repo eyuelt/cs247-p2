@@ -3,6 +3,12 @@ function p(text) {
   console.log(text);
 }
 
+(function main() {
+  layout();
+  $(window).resize(function(){layout();});
+  setupSmoothScroll();
+})();
+
 //this is probably super inefficient
 function layout() {
   var windowWidth = $(window).width();
@@ -36,6 +42,18 @@ function layout() {
     $('#tardis').offset({top:-tardisHeight/20, left:tardisLeft});
   })();
 }
-layout();
 
-$(window).resize(function(){layout();});
+function setupSmoothScroll() {
+  $(".scroll").click(function(event){
+    event.preventDefault();
+    //calculate destination place
+    var dest=0;
+    if($(this.hash).offset().left > $(document).width()-$(window).width()){
+      dest=$(document).width()-$(window).width();
+    }else{
+      dest=$(this.hash).offset().left;
+    }
+    //go to destination
+    $('html,body').animate({scrollLeft:dest}, 1000, 'swing');
+  });
+}
